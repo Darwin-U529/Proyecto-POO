@@ -19,8 +19,8 @@
                         <i class="fab fa-facebook-square" style="font-size: 40px; color: white; padding: 5px;"></i>
                     </th>
                     <th>
-                        <div class="input-group">
-                            <input style="width: 30rem;" type="text" class="form-control" placeholder="Usuario" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group" id="place">
+
                             <div class="input-group-append">
                             <button class="btn btn-outline-light" type="button" id="button-addon2" style="background-color: #f0f0f0; border: none;">
                                 <i style="color: #0000008e;" class="fas fa-search"></i>
@@ -40,11 +40,11 @@
                 <a href="perfil.html" style="">
                     <table>
                         <tr>
-                            <th>
-                                <img style="background-color: white; max-width: 35px; min-width: 35px; border-radius: 50%;" src="img/perfil.jpg" alt="">   
+                            <th id="pic_nav">
+
                             </th>
-                            <td>
-                                <p style="margin: 0 px; color: white; font-size: 13px; margin-left: .5rem;">Usuario</p>
+                            <td id="user_nav">
+
                             </td>
                         </tr>
                     </table>  
@@ -75,9 +75,8 @@
         <div class="row">
             <div class="col-4">
                 <div class="container ml-auto">
-                    <div class="row" style="margin-top: 1.5rem;">
-                        <img style="background-color: white; max-width: 37px; min-width: 35px; border-radius: 50%;" src="img/perfil.jpg" alt=""> 
-                        <p style="margin-left: 1rem; padding-top: 7px;">Usuario blindado</p>
+                    <div id="user_lnav" class="row" style="margin-top: 1.5rem;">
+                        
                     </div>
                     <div class="row" style="margin-top: 1.5rem; border: 1px solid #dbdbdb; padding: 15px; border-radius: 5px;">
                         <a class="whi" style="margin-bottom: .7rem;">    
@@ -164,8 +163,8 @@
                         <div class="row">
                             <table style="margin-left: 25px;">
                                 <tr>
-                                    <th>
-                                        <img style="max-width: 50px; min-width: 50px; border-radius: 50%;" src="img/perfil.jpg" alt="">
+                                    <th id="img_crearPu">
+                                        
                                     </th>
                                     <th>
                                         <input class="pensando out" type="text" style="border: none; margin-left: 15px; width: 30rem;" placeholder="¿Que estas pensando?">
@@ -191,11 +190,11 @@
                         <div class="row" style="margin: 1rem;">
                             <table style="margin-left: 25px;">
                                 <tr>
-                                    <th>
-                                        <img style="max-width: 55px; min-width: 50px; border-radius: 50%;" src="img/perfil.jpg" alt="">
+                                    <th id="imgP_public">
+    
                                     </th>
-                                    <th>
-                                        <a style="margin-left: 1rem; color: #4a6fc0;" href=""> Usuario blindado</a>
+                                    <th id="user_public">
+                                        
                                     </th>
                                     <th>
                                         <button class="out" style="background-color: transparent; border: none; margin-left: 25rem;">
@@ -208,8 +207,10 @@
                             </table>
                         </div>
 
-                        <img style="max-width: 45.5rem; min-width: rem;" src="img/amigos.jpg" alt="">
-
+                        <div id="img_public">
+                            
+                        </div> 
+                            
                         <div class="row" style="margin: .1rem; margin-top: 1rem;">
                             <hr style="width: 95%;">
                         </div>
@@ -246,5 +247,10 @@
     </div>
 </div>
     <br><br>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/controladorInicio.js"></script>
 </body>
 </html>
