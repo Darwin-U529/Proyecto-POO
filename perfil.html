@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/05161e6086.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="mr-auto">
+            <table style="margin-left: 10rem;">
+                <tr>
+                    <th>                    <!-- Icono y barra de Search-->
+                        <i class="fab fa-facebook-square" style="font-size: 40px; color: white; padding: 5px;"></i>
+                    </th>
+                    <th>
+                        <div class="input-group" id="place">
+                            
+                            <div class="input-group-append">
+                            <button class="btn btn-outline-light" type="button" id="button-addon2" style="background-color: #f0f0f0; border: none;">
+                                <i style="color: #0000008e;" class="fas fa-search"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>        <!--Meter aqui la parte de justo abajo-->
+
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+                 
+        <button class="navbut">
+            <a href="perfil.html" style="">
+                <table>
+                    <tr>
+                        <th id="pic_nav"> <!-- Foto perfil Nav -->
+                            
+                        </th>
+                        <td id="user_nav">    <!-- Usuario Nav-->
+                            
+                        </td>
+                    </tr>
+                </table>  
+            </a>
+        </button>
+        <div class="vertical"></div>
+        <button class="navbut">
+            <a href="inicio.html">
+                <p style="margin: 0 10px; color: white; font-size: 13px; padding: .5rem 0; ">Inicio</p>
+            </a>
+        </button>
+        <div class="vertical"></div>
+        <button class="navbut">
+            <a href="">
+                <p style="margin: 0 10px; color: white; font-size: 13px; padding: .5rem 0; ">Crear</p>
+            </a>
+        </button>
+        <div class="vertical"></div>
+        <i class="fas fa-user-friends icono"></i>
+        <i class="fab fa-facebook-messenger icono"></i>
+        <i class="fas fa-bell icono"></i></i>
+        <div class="vertical"></div>
+        <i class="fas fa-question-circle icono"></i>
+        <i style="margin-right: 15rem;" class="fas fa-caret-down icono"></i>
+
+    </nav>
+
+      <div class="container">
+            <div class="row">     <!--row para seccion de portada-->
+                <div class="card mb-3" style="width: 100%;">
+                    <img src="img/portada.jpg" class="card-img-top" alt="..." style="object-fit: cover; height: 20rem; max-width: 100%; min-width: 700px;">
+                    <div class="card-body" style="height: 3.5rem;">
+                        <table>
+                            <tr>
+                                <th style="width: 25rem;">
+                                    <div id="picPerfil">
+                                        
+                                    </div>
+                                </th>
+                                <th>
+                                    
+                                    <input onclick="genClickBajoPerfil()" class="bari" type="button" value="Biografia" style="color: #4a6fc0; padding: 0 1.5rem;;border-color: #0000001e; background-color: white; position: absolute; top: 20rem; height: 57px; border: .5px normal;">
+                                </th>
+                                <th>
+                                    <input onclick="genCardInfo()" class="bari" type="button" value="Informacion" style="color: #4a6fc0; padding: 0 2rem;;border-color: #0000001e; background-color: white; position: absolute; top: 20rem; left: 32.7rem; height: 57px;">
+                                </th>
+                                <th>
+                                    <input onclick="genCardFriends()" class="bari" type="button" value="Amigos" style="color: #4a6fc0; padding: 0 1.5rem;;border-color: #0000001e; background-color: white; position: absolute; top: 20rem; left: 41.1rem; height: 57px;">
+                                </th>
+                                <th>
+                                    <input onclick="genCardFotos()" class="bari" type="button" value="Fotos" style="color: #4a6fc0; padding: 0 1.5rem;;border-color: #0000001e; background-color: white; position: absolute; top: 20rem; left: 46.8em; height: 57px;">
+                                </th>
+                                <th>
+                                    <select class="bari" style="color: #4a6fc0; padding: 0 1.5rem;;border-color: #0000001e; background-color: white; position: absolute; top: 20rem; left: 52rem; height: 57px;">                                                                                             
+                                        <option value="1">Mas</option>                                                                                                                                                                                                       
+                                        <option value="2"></option>                                                                           
+                                    </select>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="row" id="cardFotos">
+                
+            </div>
+
+            <div class="row" id="cardInfo">
+                
+            </div>
+
+            <div class="row" id="cardFriends">          <!-- -->
+                
+            </div>
+
+            <div class="row mt-4" id="bajoPerfil">      <!-- row para secciones abajo de la portada-->
+                
+            </div>
+
+            
+
+      </div>
+      <br><br>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/controladorPerfil.js"></script>
+</body>
+</html>
