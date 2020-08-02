@@ -174,9 +174,6 @@ function genBajoPerfil() {
                                 </th>
                             </tr>
                         </table>
-                        <!-- <img style="background-color: white; padding: 4px;max-width: 200px; min-width: 200px; position: absolute; top: 160px; left: 50px; border-radius: 50%;" src="img/perfil.jpg" alt=""> -->
-                        
-                        <!-- <i style="color: white; background-color: #4a6fc0; border-radius: 50%; padding: 5px; margin: 0 1rem; font-size: 5rem;" class="fas fa-globe-americas"></i> -->
                         
                     </div>
                     <div class="row" style="margin: .1rem;">
