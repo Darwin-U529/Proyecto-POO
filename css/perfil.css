@@ -7,6 +7,10 @@ p {
     margin: 0;
 }
 
+.modal-dialog {
+    width: 200rem!important;
+}
+
 .bg-light {
     background-color: #4a6fc0!important;
 }
@@ -71,4 +75,19 @@ p {
 .navbut:hover {
     background-color: #0000001c;
     border-radius: 5px;
+}
+
+.reac {
+    padding: .5rem 1.5rem;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.reac:focus {
+    outline: none!important;
+}
+
+.reac:hover {
+    background-color: #00000018;
 }

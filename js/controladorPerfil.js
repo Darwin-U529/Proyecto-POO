@@ -766,4 +766,10 @@ function infoBas() {
     }
 }
 
+function mostrarModal() {
+    $('#botonModal').modal('show');
+}
 
+function quitarModal() {
+    $('#botonModal').modal('hide');
+}
