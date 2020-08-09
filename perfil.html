@@ -76,13 +76,17 @@
       <div class="container">
             <div class="row">     <!--row para seccion de portada-->
                 <div class="card mb-3" style="width: 100%;">
-                    <img src="img/portada.jpg" class="card-img-top" alt="..." style="object-fit: cover; height: 20rem; max-width: 100%; min-width: 700px;">
+                
+                    <div id="picPortada" onclick="mostrarPicPortada()">    
+                    
+                    </div>    
+
                     <div class="card-body" style="height: 3.5rem;">
                         <table>
                             <tr>
                                 <th style="width: 25rem;">
                                     
-                                    <div id="picPerfil" onclick="mostrarModal()">
+                                    <div id="picPerfil" onclick="mostrarPicPerfil()">
                                         
                                     </div>
                                 </th>
@@ -133,104 +137,418 @@
       </div>
       <br><br>
 
-      <div class="modal fade" id="botonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="modalPerfil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-lg">
             <div class="modal-content">    
-                <div class="row " style="margin-left: -18rem;">
+                <div class="row " style="margin-left: -18rem; margin-top: -1rem;">
                         <table style="background-color: white;">
                             <tr>
+                                <th style="background-color: black;"> 
+                                    <div>
+                                        <img src="img/perfil.jpg" alt="" style="max-width: 43rem; min-width: 40rem;">
+                                    </div>
+                                </th>
                                 <th>
                                     <div>
-                                        <img src="img/perfil.jpg" alt="" style="max-width: 40rem; min-width: 40rem;">
+                                        <div class="modal-body" style=" padding: 0; padding-right: 15px;">
+                                            
+                                            <div class="row" style="margin-right: 30rem;">
+                                            </div>
+
+                                            <div class="row" style="margin-top: 1.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <img style="max-width: 55px; min-width: 50px; border-radius: 50%; margin-left: 3rem;" src="img/perfil.jpg" alt="">
+                                                        </th>
+                                                        <th>
+                                                            <div>
+                                                                <a style="margin-left: 1rem; color: #4a6fc0;" href="">Darwin Rodas</a>
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <button class="out" style="background-color: transparent; border: none; margin-right: 1rem; margin-left: 10rem;">
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <br><br><br>
+
+                                            <div class="row" style="margin-bottom: -.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <div style="margin-left: 3rem;">
+                                                                <i style="border-radius: 50%; background-color: #4a6fc0; color: white; padding: 5px;" class="far fa-thumbs-up"></i>
+                                                                46
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <div style="margin-left: 15rem; font-weight: normal; font-size: .9rem;">
+                                                                3 comentarios
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin: .1rem; margin-bottom: -0.5rem; margin-top: 0;">
+                                                <hr style="width: 95%;">
+                                            </div>
+
+                                            <div class="row">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <button class="reac" style="margin-left: 2.5rem;">
+                                                                <i class="far fa-thumbs-up"></i>
+                                                                Me gusta                                          
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="far fa-comment"></i>
+                                                                Comentar
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="fas fa-share"></i>
+                                                                compartir
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin-top: -1.5rem;">
+                                                <hr style="width: 100%;">
+                                            </div>
+
+                                            <section id="coments">
+                                                <div class="row" style="margin-bottom: 1rem;">
+                                                    <table>
+                                                        <tr style="margin-bottom: 5rem;">
+                                                            <th>
+                                                                <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="img/thunder.jpg" alt="">
+                                                            </th>
+                                                            <th>
+                                                                <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                                                    <p style="font-size: .9rem; font-weight: normal;">
+                                                                        <a style="color: #4a6fc0; font-weight: bold;" href="">Oscar Castro </a>
+                                                                        aqui va un comentario para ejemplificar como quedara esto 
+                                                                    </p>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+
+                                                <div class="row" style="margin-bottom: 1rem;">
+                                                    <table>
+                                                        <tr style="margin-bottom: 5rem;">
+                                                            <th>
+                                                                <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="img/thunder.jpg" alt="">
+                                                            </th>
+                                                            <th>
+                                                                <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                                                    <p style="font-size: .9rem; font-weight: normal;">
+                                                                        <a style="color: #4a6fc0; font-weight: bold;" href="">Oscar Castro </a>
+                                                                        aqui va un comentario para ejemplificar como quedara esto 
+                                                                    </p>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+
+                                                <div class="row" style="margin-bottom: 1rem;">
+                                                    <table>
+                                                        <tr style="margin-bottom: 5rem;">
+                                                            <th>
+                                                                <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="img/thunder.jpg" alt="">
+                                                            </th>
+                                                            <th>
+                                                                <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                                                    <p style="font-size: .9rem; font-weight: normal;">
+                                                                        <a style="color: #4a6fc0; font-weight: bold;" href="">Oscar Castro </a>
+                                                                        aqui va un comentario para ejemplificar como quedara esto 
+                                                                    </p>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="row" style="margin-bottom: 1rem;">
+                                                    <table>
+                                                        <tr style="margin-bottom: 5rem;">
+                                                            <th>
+                                                                <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="img/thunder.jpg" alt="">
+                                                            </th>
+                                                            <th>
+                                                                <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                                                    <p style="font-size: .9rem; font-weight: normal;">
+                                                                        <a style="color: #4a6fc0; font-weight: bold;" href="">Oscar Castro </a>
+                                                                        aqui va un comentario para ejemplificar como quedara esto 
+                                                                    </p>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="row" style="margin-bottom: 1rem;">
+                                                    <table>
+                                                        <tr style="margin-bottom: 5rem;">
+                                                            <th>
+                                                                <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="img/thunder.jpg" alt="">
+                                                            </th>
+                                                            <th>
+                                                                <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                                                    <p style="font-size: .9rem; font-weight: normal;">
+                                                                        <a style="color: #4a6fc0; font-weight: bold;" href="">Oscar Castro </a>
+                                                                        aqui va un comentario para ejemplificar como quedara esto 
+                                                                    </p>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+
+                                            </secction>   
+                                        </div>
+
+                                        <section style="background-color: #f3f3f3; padding: .5rem;">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <img style="max-width: 40px; min-width: 35px; border-radius: 50%; margin-left: 1rem;" src="img/perfil.jpg" alt="">
+                                                    </th>
+    
+                                                    <td>
+                                                        <input style="margin-left: 1rem; border-radius: 5px; background-color: transparent; border: none; outline: none;" placeholder="Escribe un comentario" type="text">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </section>
+
+                                    </div>
+                                    
+
+                                    
+
+
+                                </th>   
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+     </div>
+
+     <div class="modal fade" id="modalPortada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-lg">
+            <div class="modal-content">    
+                <div class="row " style="margin-left: -18rem; margin-top: -1rem;">
+                        <table style="background-color: white;">
+                            <tr>
+                                <th style="background-color: black;"> 
+                                    <div>
+                                        <img src="img/portada.jpg" alt="" style="max-width: 43rem; min-width: 40rem;">
                                     </div>
                                 </th>
                                 <th>
-                                    <div class="row" style="margin-right: 30rem;">
+                                    <div>
+                                        <div class="modal-body" style=" padding: 0; padding-right: 15px;">
+                                            
+                                            <div class="row" style="margin-right: 30rem;">
+                                            </div>
+
+                                            <div class="row" style="margin-top: 1.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <img style="max-width: 55px; min-width: 50px; border-radius: 50%; margin-left: 3rem;" src="img/perfil.jpg" alt="">
+                                                        </th>
+                                                        <th>
+                                                            <div>
+                                                                <a style="margin-left: 1rem; color: #4a6fc0;" href="">Darwin Rodas</a>
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <button class="out" style="background-color: transparent; border: none; margin-right: 1rem; margin-left: 10rem;">
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <br><br><br>
+
+                                            <div class="row" style="margin-bottom: -.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <div style="margin-left: 3rem;">
+                                                                <i style="border-radius: 50%; background-color: #4a6fc0; color: white; padding: 5px;" class="far fa-thumbs-up"></i>
+                                                                46
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <div style="margin-left: 15rem; font-weight: normal; font-size: .9rem;">
+                                                                3 comentarios
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin: .1rem; margin-bottom: -0.5rem; margin-top: 0;">
+                                                <hr style="width: 95%;">
+                                            </div>
+
+                                            <div class="row">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <button class="reac" style="margin-left: 2.5rem;">
+                                                                <i class="far fa-thumbs-up"></i>
+                                                                Me gusta                                          
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="far fa-comment"></i>
+                                                                Comentar
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="fas fa-share"></i>
+                                                                compartir
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin-top: -1.5rem;">
+                                                <hr style="width: 100%;">
+                                            </div>
+
+                                            <section id="coments">
+                                                <div class="row" style="margin-bottom: 1rem;">
+                                                    <table>
+                                                        <tr style="margin-bottom: 5rem;">
+                                                            <th>
+                                                                <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="img/thunder.jpg" alt="">
+                                                            </th>
+                                                            <th>
+                                                                <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                                                    <p style="font-size: .9rem; font-weight: normal;">
+                                                                        <a style="color: #4a6fc0; font-weight: bold;" href="">Oscar Castro </a>
+                                                                        aqui va un comentario para ejemplificar como quedara esto 
+                                                                    </p>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+
+                                                <div class="row" style="margin-bottom: 1rem;">
+                                                    <table>
+                                                        <tr style="margin-bottom: 5rem;">
+                                                            <th>
+                                                                <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="img/thunder.jpg" alt="">
+                                                            </th>
+                                                            <th>
+                                                                <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                                                    <p style="font-size: .9rem; font-weight: normal;">
+                                                                        <a style="color: #4a6fc0; font-weight: bold;" href="">Oscar Castro </a>
+                                                                        aqui va un comentario para ejemplificar como quedara esto 
+                                                                    </p>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+
+                                                <div class="row" style="margin-bottom: 1rem;">
+                                                    <table>
+                                                        <tr style="margin-bottom: 5rem;">
+                                                            <th>
+                                                                <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="img/thunder.jpg" alt="">
+                                                            </th>
+                                                            <th>
+                                                                <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                                                    <p style="font-size: .9rem; font-weight: normal;">
+                                                                        <a style="color: #4a6fc0; font-weight: bold;" href="">Oscar Castro </a>
+                                                                        aqui va un comentario para ejemplificar como quedara esto 
+                                                                    </p>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="row" style="margin-bottom: 1rem;">
+                                                    <table>
+                                                        <tr style="margin-bottom: 5rem;">
+                                                            <th>
+                                                                <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="img/thunder.jpg" alt="">
+                                                            </th>
+                                                            <th>
+                                                                <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                                                    <p style="font-size: .9rem; font-weight: normal;">
+                                                                        <a style="color: #4a6fc0; font-weight: bold;" href="">Oscar Castro </a>
+                                                                        aqui va un comentario para ejemplificar como quedara esto 
+                                                                    </p>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="row" style="margin-bottom: 1rem;">
+                                                    <table>
+                                                        <tr style="margin-bottom: 5rem;">
+                                                            <th>
+                                                                <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="img/thunder.jpg" alt="">
+                                                            </th>
+                                                            <th>
+                                                                <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                                                    <p style="font-size: .9rem; font-weight: normal;">
+                                                                        <a style="color: #4a6fc0; font-weight: bold;" href="">Oscar Castro </a>
+                                                                        aqui va un comentario para ejemplificar como quedara esto 
+                                                                    </p>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+
+                                            </secction>   
+                                        </div>
+
+                                        <section style="background-color: #f3f3f3; padding: .5rem;">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <img style="max-width: 40px; min-width: 35px; border-radius: 50%; margin-left: 1rem;" src="img/perfil.jpg" alt="">
+                                                    </th>
+    
+                                                    <td>
+                                                        <input style="margin-left: 1rem; border-radius: 5px; background-color: transparent; border: none; outline: none;" placeholder="Escribe un comentario" type="text">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </section>
 
                                     </div>
-                                    <div class="row" style=>
-                                        <table>
-                                            <tr>
-                                                <th>
-                                                    <img style="max-width: 55px; min-width: 50px; border-radius: 50%; margin-left: 3rem;" src="img/perfil.jpg" alt="">
-                                                </th>
-                                                <th>
-                                                    <div>
-                                                        <a style="margin-left: 1rem; color: #4a6fc0;" href="">Darwin Rodas</a>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <button class="out" style="background-color: transparent; border: none; margin-right: 3rem; margin-left: 11rem;">
-                                                        <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
-                                                        <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
-                                                        <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
-                                                    </button>
-                                                </th>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <br><br>
-
-                                    <div class="row" style="margin: .1rem; margin-top: 1rem; margin-bottom: -0.5rem;">
-                                        <hr style="width: 90%;">
-                                    </div>
-
-                                    <div class="row">
-                                        <table>
-                                            <tr>
-                                                <th>
-                                                    <button class="reac" style="margin-left: 2.5rem;">
-                                                        <i class="far fa-thumbs-up"></i>
-                                                        Me gusta                                          
-                                                    </button>
-                                                </th>
-                                                <th>
-                                                    <button class="reac">
-                                                        <i class="far fa-comment"></i>
-                                                        Comentar
-                                                    </button>
-                                                </th>
-                                                <th>
-                                                    <button class="reac">
-                                                        <i class="fas fa-share"></i>
-                                                        compartir
-                                                    </button>
-                                                </th>
-                                            </tr>
-                                        </table>
-                                    </div>
-
-                                    <div class="row" style="margin: .1rem; margin-top: -1.5rem;">
-                                        <hr style="width: 100%;">
-                                    </div>
-
-                                    <table>
-                                        <tr>
-                                            <th>
-                                                <img style="max-width: 55px; min-width: 50px; border-radius: 50%; margin-left: 3rem;" src="img/perfil.jpg" alt="">
-                                            </th>
-                                            <th>
-                                                <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-                                                    <h4 id="fat">@fat</h4>
-                                                    <p>...</p>
-                                                    <h4 id="mdo">@mdo</h4>
-                                                    <p>...</p>
-                                                    <h4 id="one">one</h4>
-                                                    <p>...</p>
-                                                    <h4 id="two">two</h4>
-                                                    <p>...</p>
-                                                    <h4 id="three">three</h4>
-                                                    <p>...</p>
-                                                  </div>
-                                                <!--<div>
-                                                    <a style="margin-left: 1rem; color: #4a6fc0;" href="">Darwin Rodas</a>
-                                                </div>-->
-                                            </th>
-
-                                        </tr>
-                                    </table>
-                                    
-                                </th>
+                                </th>   
                             </tr>
                         </table>
                     </div>

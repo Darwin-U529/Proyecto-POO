@@ -78,10 +78,11 @@ p {
 }
 
 .reac {
-    padding: .5rem 1.5rem;
+    padding: .3rem 2.1rem;
     background-color: transparent;
     border: none;
     margin-bottom: 1rem;
+    font-size: .8rem;
 }
 
 .reac:focus {
@@ -90,4 +91,19 @@ p {
 
 .reac:hover {
     background-color: #00000018;
+}
+
+.modal-body{
+    height: 40rem;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 7px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #0000006a;
+    border-radius: 5px;
 }

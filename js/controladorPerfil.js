@@ -9,6 +9,7 @@ var Usuario = [
         lu_naciento: "Comayaguela, Francisco Morazan, Honduras",
         ingreso: "noviembre de 2010",
         img_perfil: "img/perfil.jpg",
+        img_portada: "img/portada.jpg",
         fecha_nacimiento: "25 de agosto 1997",
         telefono: "8524-2567",
         correo: "programacion@mail.com",
@@ -16,7 +17,7 @@ var Usuario = [
         sexo: "Masculino",
         intereses: "Mujeres",
         idiomas: "Español",
-        imagenes:["img/1.webp","img/2.webp","img/portada.jpg", "img/4.webp","img/portada.jpg", "img/6.webp","img/amigos.jpg", "img/8.webp", "img/9.webp","img/amigos.jpg", "img/11.webp","img/12.webp",],
+        imagenes:["img/1.webp","img/2.webp","img/portada.jpg", "img/4.webp","img/portada.jpg", "img/6.webp","img/amigos.jpg", "img/8.webp", "img/9.webp","img/amigos.jpg", "img/11.webp","img/12.webp", "img/portada.jpg", ],
         amigos: [
             {
                 name: "Ricardo Antonio",
@@ -49,6 +50,9 @@ let contador = 1;
 }*/
 function genInfo() {
     for (let i = 0; i < Usuario.length; i++) {
+        document.getElementById('picPortada').innerHTML = 
+        `<img src="${Usuario[i].img_portada}" class="card-img-top" alt="..." style="object-fit: cover; height: 20rem; max-width: 100%; min-width: 700px;">`;
+
         document.getElementById('picPerfil').innerHTML = 
         `<p style="top: 16rem; left: 17rem;position: absolute; color: white; font-size: 2rem; font-weight: bold;">${Usuario[i].nombre + " " + Usuario[i].apellido}</p>
         <img style="background-color: white; padding: 4px;max-width: 200px; min-width: 200px; position: absolute; top: 160px; left: 50px; border-radius: 50%;" src="${Usuario[i].img_perfil}" alt="">`;
@@ -766,10 +770,10 @@ function infoBas() {
     }
 }
 
-function mostrarModal() {
-    $('#botonModal').modal('show');
+function mostrarPicPerfil() {
+    $('#modalPerfil').modal('show');
 }
 
-function quitarModal() {
-    $('#botonModal').modal('hide');
+function mostrarPicPortada() {
+    $('#modalPortada').modal('show');
 }
