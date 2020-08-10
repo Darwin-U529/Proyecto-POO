@@ -365,63 +365,6 @@ function genInfo() {
         document.getElementById('user_nav').innerHTML = 
         `<p style="margin: 0 px; color: white; font-size: 13px; margin-left: .5rem;">${Usuario[i].nombre + " " + Usuario[i].apellido}</p> `;
     }
-
-    /*for (let k = 0; k < Comentarios.length; k++) {
-        document.getElementById('coments').innerHTML += 
-        `<div class="row" style="margin-bottom: 1rem;">
-            <table>
-                <tr style="margin-bottom: 5rem;">
-                    <th>
-                        <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="${Comentarios[k].picUser}" alt="">
-                    </th>
-                    <th>
-                        <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
-                            <p style="font-size: .9rem; font-weight: normal;">
-                                <a style="color: #4a6fc0; font-weight: bold;" href="">${Comentarios[k].comentUser}</a>
-                                ${Comentarios[k].coment} 
-                            </p>
-                        </div>
-                    </th>
-                </tr>
-            </table>
-        </div>`;
-    }*/
-
-    //Quitar esto 
-
-    
-
-    /*for (let z = 0; z < Usuario.length; z++) {
-        for (let index = 0; index < apartadoFotografia.length; index++) {
-            
-            
-        }
-        
-    }*/
-
-
-
-    /*for (let h = 0; h < Comentarios.length; h++) {
-        document.getElementById('coments3').innerHTML += 
-        `<div class="row" style="margin-bottom: 1rem;">
-            <table>
-                <tr style="margin-bottom: 5rem;">
-                    <th>
-                        <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="${Comentarios[h].picUser}" alt="">
-                    </th>
-                    <th>
-                        <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
-                            <p style="font-size: .9rem; font-weight: normal;">
-                                <a style="color: #4a6fc0; font-weight: bold;" href="">${Comentarios[h].comentUser}</a>
-                                ${Comentarios[h].coment} 
-                            </p>
-                        </div>
-                    </th>
-                </tr>
-            </table>
-        </div>`;
-    }*/
-
 }
 genInfo();
 
@@ -729,13 +672,6 @@ function genBajoPerfil() {
 }
 genBajoPerfil();
 
-//AQUIB ASDFASF SVGDefsElement
-//SVGAnimatedTransformListASDF
-
-//SVGAnimatedTransformListASDF
-
-//ASDFASDF
-
 function genFotos() {
     for (let i = 0; i < Usuario.length; i++) {
         for (let k = 0; k <= 8; k++) {
@@ -794,7 +730,6 @@ function genFotoscard() {
     }
 }
 genFotoscard();
-
 
 function genClickBajoPerfil() {
     document.getElementById('cardFotos').innerHTML = '';
@@ -1367,16 +1302,67 @@ function infoBas() {
 
 function mostrarPicPerfil() {
     $('#modalPerfil').modal('show');
+
+    document.getElementById('picPerfilPP').innerHTML =
+    `<img src="${Usuario[0].img_perfil}" alt="" style="max-width: 43rem; min-width: 40rem;">`;
+    
+    document.getElementById('picComentPP').innerHTML =
+    `<img style="max-width: 40px; min-width: 35px; border-radius: 50%; margin-left: 1rem;" src="${Usuario[0].img_perfil}" alt="">`;
+    
+    document.getElementById('picPerfilPP').innerHTML =
+    `<img style="max-width: 55px; min-width: 50px; border-radius: 50%; margin-left: 3rem;" src="${Usuario[0].img_perfil}" alt="">`;
+    
+    document.getElementById('namePerfilPP').innerHTML =
+    `<a style="margin-left: 1rem; color: #4a6fc0;" href="">${Usuario[0].nombre} ${Usuario[0].apellido} </a>`;
+
+    document.getElementById('coments').innerHTML = " "; 
+    for (let x = 0; x < Usuario[0].apartadoFotografia[2].Comentarios.length; x++) {
+        document.getElementById('coments').innerHTML += 
+            `<div class="row" style="margin-bottom: 1rem;">
+                <table>
+                    <tr style="margin-bottom: 5rem;">
+                        <th>
+                            <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="${Usuario[0].apartadoFotografia[2].Comentarios[x].picUser}" alt="">
+                        </th>
+                        <th>
+                            <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                <p style="font-size: .9rem; font-weight: normal;">
+                                    <a style="color: #4a6fc0; font-weight: bold;" href="">${Usuario[0].apartadoFotografia[2].Comentarios[x].comentUser}</a>
+                                    ${Usuario[0].apartadoFotografia[2].Comentarios[x].coment} 
+                                </p>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>`;
+
+        document.getElementById('comentsPP').innerHTML =
+            `${x+1} comentarios`;
+        
+    }
 }
 
 function mostrarPicPortada() {
     $('#modalPortada').modal('show');
+
+    
 }
 
 function mostrarFotoApartado(a, b) {
     $('#modalApartadoFotos').modal('show');
-    document.getElementById('apartadoFotos').innerHTML =
+    document.getElementById('apartadoFoto').innerHTML =
     `<img src="${Usuario[a].apartadoFotografia[b].img}" alt="" style="max-width: 43rem; min-width: 40rem;">`;
+
+    document.getElementById('picComentAF').innerHTML =
+    `<img style="max-width: 40px; min-width: 35px; border-radius: 50%; margin-left: 1rem;" src="${Usuario[a].img_perfil}" alt="">`;
+    
+    document.getElementById('picPerfilAF').innerHTML =
+    `<img style="max-width: 55px; min-width: 50px; border-radius: 50%; margin-left: 3rem;" src="${Usuario[a].img_perfil}" alt="">`;
+    
+    document.getElementById('namePerfilAF').innerHTML =
+    `<a style="margin-left: 1rem; color: #4a6fc0;" href="">${Usuario[a].nombre} ${Usuario[a].apellido} </a>`;
+    
+    
 
     document.getElementById('coments3').innerHTML = " "; 
     for (let e = 0; e < Usuario[a].apartadoFotografia[b].Comentarios.length; e++) {
@@ -1398,6 +1384,9 @@ function mostrarFotoApartado(a, b) {
                     </tr>
                 </table>
             </div>`;
+            
+        document.getElementById('comentsAF').innerHTML =
+        `${e+1} comentarios`;   
     }
 }
 
@@ -1405,6 +1394,15 @@ function mostrarFotoInfo(a, b) {
     $('#modalFotosInfo').modal('show');
     document.getElementById('fotosInfo').innerHTML =
     `<img src="${Usuario[a].apartadoFotografia[b].img}" alt="" style="max-width: 43rem; min-width: 40rem;">`;
+    
+    document.getElementById('picComentFI').innerHTML =
+    `<img style="max-width: 40px; min-width: 35px; border-radius: 50%; margin-left: 1rem;" src="${Usuario[a].img_perfil}" alt="">`;
+    
+    document.getElementById('namePerfilFI').innerHTML =
+    `<a style="margin-left: 1rem; color: #4a6fc0;" href="">${Usuario[a].nombre} ${Usuario[a].apellido} </a>`;
+
+    document.getElementById('picPerfilFI').innerHTML =
+    `<img style="max-width: 55px; min-width: 50px; border-radius: 50%; margin-left: 3rem;" src="${Usuario[a].img_perfil}" alt="">`;
 
     document.getElementById('coments2').innerHTML = " "; 
     for (let e = 0; e < Usuario[a].apartadoFotografia[b].Comentarios.length; e++) {
@@ -1426,5 +1424,9 @@ function mostrarFotoInfo(a, b) {
                     </tr>
                 </table>
             </div>`;
+
+        document.getElementById('comentsFI').innerHTML =
+            `${e+1} comentarios`;       
     }
 }
+

@@ -136,7 +136,127 @@
       </div>
       <br><br>
 
-      <div class="modal fade" id="modalPerfil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalPerfil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-lg">
+            <div class="modal-content">    
+                <div class="row " style="margin-left: -18rem; margin-top: -1rem;">
+                        <table style="background-color: white;">
+                            <tr>
+                                <th style="background-color: black;"> 
+                                    <div id="picPerfilPP">
+                                        
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <div class="modal-body" style=" padding: 0; padding-right: 15px;">
+                                            
+                                            <div class="row" style="margin-right: 30rem;">
+                                            </div>
+
+                                            <div class="row" style="margin-top: 1.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th id="picPerfilPP">
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            <div id="namePerfilPP">
+                                                                
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <button class="out" style="background-color: transparent; border: none; margin-right: 1rem; margin-left: 10rem; outline: none;">
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <br><br><br>
+
+                                            <div class="row" style="margin-bottom: -.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <div style="margin-left: 3rem;">
+                                                                <i style="border-radius: 50%; background-color: #4a6fc0; color: white; padding: 5px;" class="far fa-thumbs-up"></i>
+                                                                46
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <div style="margin-left: 15rem; font-weight: normal; font-size: .9rem;" id="comentsPP">
+                                                                
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin: .1rem; margin-bottom: -0.5rem; margin-top: 0;">
+                                                <hr style="width: 95%;">
+                                            </div>
+
+                                            <div class="row">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <button class="reac" style="margin-left: 2.5rem;">
+                                                                <i class="far fa-thumbs-up"></i>
+                                                                Me gusta                                          
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="far fa-comment"></i>
+                                                                Comentar
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="fas fa-share"></i>
+                                                                compartir
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin-top: -1.5rem;">
+                                                <hr style="width: 100%;">
+                                            </div>
+
+                                            <section id="coments">
+
+                                            </secction>   
+                                        </div>
+
+                                        <section style="background-color: #f3f3f3; padding: .5rem;">
+                                            <table>
+                                                <tr>
+                                                    <th id="picComentPP">
+                                                        
+                                                    </th>
+    
+                                                    <td>
+                                                        <input style="margin-left: 1rem; border-radius: 5px; background-color: transparent; border: none; outline: none;" placeholder="Escribe un comentario" type="text">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </section>
+
+                                    </div>
+                                </th>   
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+     </div>
+
+     <div class="modal fade" id="modalPortada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-lg">
             <div class="modal-content">    
                 <div class="row " style="margin-left: -18rem; margin-top: -1rem;">
@@ -144,7 +264,7 @@
                             <tr>
                                 <th style="background-color: black;"> 
                                     <div>
-                                        <img src="img/perfil.jpg" alt="" style="max-width: 43rem; min-width: 40rem;">
+                                        <img src="img/portada.jpg" alt="" style="max-width: 43rem; min-width: 40rem;">
                                     </div>
                                 </th>
                                 <th>
@@ -255,9 +375,7 @@
                 </div>
             </div>
      </div>
-
-    
-    
+  
     <div class="modal fade" id="modalFotosInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-lg">
             <div class="modal-content">    
@@ -279,12 +397,12 @@
                                             <div class="row" style="margin-top: 1.5rem;">
                                                 <table>
                                                     <tr>
-                                                        <th>
-                                                            <img style="max-width: 55px; min-width: 50px; border-radius: 50%; margin-left: 3rem;" src="img/perfil.jpg" alt="">
+                                                        <th id="picPerfilFI">
+                                                            
                                                         </th>
                                                         <th>
-                                                            <div>
-                                                                <a style="margin-left: 1rem; color: #4a6fc0;" href="">Darwin Rodas</a>
+                                                            <div id="namePerfilFI">
+                                                                
                                                             </div>
                                                         </th>
                                                         <th>
@@ -309,8 +427,8 @@
                                                             </div>
                                                         </th>
                                                         <th>
-                                                            <div style="margin-left: 15rem; font-weight: normal; font-size: .9rem;">
-                                                                5 comentarios
+                                                            <div style="margin-left: 15rem; font-weight: normal; font-size: .9rem;" id="comentsFI">
+                                                                
                                                             </div>
                                                         </th>
                                                     </tr>
@@ -358,8 +476,8 @@
                                         <section style="background-color: #f3f3f3; padding: .5rem;">
                                             <table>
                                                 <tr>
-                                                    <th>
-                                                        <img style="max-width: 40px; min-width: 35px; border-radius: 50%; margin-left: 1rem;" src="img/perfil.jpg" alt="">
+                                                    <th id="picComentFI">
+                                                        
                                                     </th>
     
                                                     <td>
@@ -377,7 +495,6 @@
                 </div>
             </div>
     </div>
-
 
     <div class="modal fade" id="modalApartadoFotos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-lg">
@@ -400,12 +517,12 @@
                                             <div class="row" style="margin-top: 1.5rem;">
                                                 <table>
                                                     <tr>
-                                                        <th>
-                                                            <img style="max-width: 55px; min-width: 50px; border-radius: 50%; margin-left: 3rem;" src="img/perfil.jpg" alt="">
+                                                        <th id="picPerfilAF">
+                                                            
                                                         </th>
                                                         <th>
-                                                            <div>
-                                                                <a style="margin-left: 1rem; color: #4a6fc0;" href="">Darwin Rodas</a>
+                                                            <div id="namePerfilAF">
+                                                                
                                                             </div>
                                                         </th>
                                                         <th>
@@ -430,8 +547,8 @@
                                                             </div>
                                                         </th>
                                                         <th>
-                                                            <div style="margin-left: 15rem; font-weight: normal; font-size: .9rem;">
-                                                                5 comentarios
+                                                            <div style="margin-left: 15rem; font-weight: normal; font-size: .9rem;" id="comentsAF">
+                                                                
                                                             </div>
                                                         </th>
                                                     </tr>
@@ -479,8 +596,8 @@
                                         <section style="background-color: #f3f3f3; padding: .5rem;">
                                             <table>
                                                 <tr>
-                                                    <th>
-                                                        <img style="max-width: 40px; min-width: 35px; border-radius: 50%; margin-left: 1rem;" src="img/perfil.jpg" alt="">
+                                                    <th id="picComentAF">
+                                                        
                                                     </th>
     
                                                     <td>
