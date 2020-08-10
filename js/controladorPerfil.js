@@ -17,26 +17,329 @@ var Usuario = [
         sexo: "Masculino",
         intereses: "Mujeres",
         idiomas: "Español",
-        imagenes:["img/1.webp","img/2.webp","img/portada.jpg", "img/4.webp","img/portada.jpg", "img/6.webp","img/amigos.jpg", "img/8.webp", "img/9.webp","img/amigos.jpg", "img/11.webp","img/12.webp", "img/portada.jpg", ],
+        apartadoFotografia: [
+            {
+                img: "img/1.webp",
+                Comentarios: [
+                    {
+                        comentUser: "Oscar Castro",
+                        coment: "Genial foto amigo",
+                        picUser: "img/castro.jpg",
+                    },
+                    {
+                        comentUser: "Vanessa Medina",
+                        coment: "Nice pic, good day ;)",
+                        picUser: "img/medina.jpg",
+                    },
+                    {
+                        comentUser: "Jorge Varela",
+                        coment: "Ey, tiempo sin verte, cualquier dia salimos :)",
+                        picUser: "img/varela.jpg",
+                    },
+                    {
+                        comentUser: "Ronald Pavón",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/thunder.jpg",
+                    },
+                ]
+            },
+            {
+
+                img: "img/2.webp",
+                Comentarios: [
+                    {
+                        comentUser: "Mario Perdomo",
+                        coment: "Genial foto amigo",
+                        picUser: "img/perdomo.jpg",
+                    },
+                    {
+                        comentUser: "Vanessa Medina",
+                        coment: "Nice pic, good day ;)",
+                        picUser: "img/medina.jpg",
+                    },
+                    {
+                        comentUser: "Manuel Varela",
+                        coment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus praesentium illum atque commodi, odio quidem?",
+                        picUser: "img/manuel.jpg",
+                    },
+                    {
+                        comentUser: "Ronald Pavón",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/thunder.jpg",
+                    },
+                ]
+            },
+            {
+                img: "img/portada.jpg",
+                Comentarios: [
+                    {
+                        comentUser: "Joaquin Phoenix",
+                        coment: "Hola que tal estas, todo bien por aqui",
+                        picUser: "img/arodi.jpg",
+                    },
+                    {
+                        comentUser: "Vanessa Medina",
+                        coment: "Nice pic, good day ;)",
+                        picUser: "img/medina.jpg",
+                    },
+                    {
+                        comentUser: "Mario Perdomo",
+                        coment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus praesentium illum atque commodi, odio quidem?",
+                        picUser: "img/perdomo.jpg",
+                    },
+                    {
+                        comentUser: "Ronald Pavón",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/thunder.jpg",
+                    },
+                ]
+            },
+            {
+                img: "img/4.webp",
+                Comentarios: [
+                    {
+                        comentUser: "Manuel Varela",
+                        coment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus praesentium illum atque commodi, odio quidem?",
+                        picUser: "img/manuel.jpg",
+                    },
+                    {
+                        comentUser: "Vanessa Medina",
+                        coment: "Nice pic, good day ;)",
+                        picUser: "img/medina.jpg",
+                    },
+                    {
+                        comentUser: "Joaquin Phoenix",
+                        coment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus",
+                        picUser: "img/arodi.jpg",
+                    },
+                    {
+                        comentUser: "Ronald Pavón",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/thunder.jpg",
+                    },
+                ]
+            },
+            { 
+                img: "img/portada.jpg",
+                Comentarios: [
+                    {
+                        comentUser: "Oscar Castro",
+                        coment: "Genial foto amigo",
+                        picUser: "img/castro.jpg",
+                    },
+                    {
+                        comentUser: "Mario Perdomo",
+                        coment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus praesentium illum atque commodi, odio quidem?",
+                        picUser: "img/perdomo.jpg",
+                    },
+                    {
+                        comentUser: "Jorge Varela",
+                        coment: "Ey, tiempo sin verte, cualquier dia salimos :)",
+                        picUser: "img/varela.jpg",
+                    },
+                    {
+                        comentUser: "Manuel Varela",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/manuel.jpg",
+                    },
+                ]
+            },
+            {
+                img: "img/6.webp",
+                Comentarios: [
+                    {
+                        comentUser: "Oscar Castro",
+                        coment: "Genial foto amigo",
+                        picUser: "img/castro.jpg",
+                    },
+                    {
+                        comentUser: "Vanessa Medina",
+                        coment: "Nice pic, good day ;)",
+                        picUser: "img/medina.jpg",
+                    },
+                    {
+                        comentUser: "Jorge Varela",
+                        coment: "Ey, tiempo sin verte, cualquier dia salimos :)",
+                        picUser: "img/varela.jpg",
+                    },
+                    {
+                        comentUser: "Ronald Pavón",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/thunder.jpg",
+                    },
+                ]
+            },
+            {
+                img: "img/amigos.jpg",
+                Comentarios: [
+                    {
+                        comentUser: "Oscar Castro",
+                        coment: "Genial foto amigo",
+                        picUser: "img/castro.jpg",
+                    },
+                    {
+                        comentUser: "Vanessa Medina",
+                        coment: "Nice pic, good day ;)",
+                        picUser: "img/medina.jpg",
+                    },
+                    {
+                        comentUser: "Jorge Varela",
+                        coment: "Ey, tiempo sin verte, cualquier dia salimos :)",
+                        picUser: "img/varela.jpg",
+                    },
+                    {
+                        comentUser: "Ronald Pavón",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/thunder.jpg",
+                    },
+                ]
+            },
+            {
+                img: "img/8.webp",
+                Comentarios: [
+                    {
+                        comentUser: "Oscar Castro",
+                        coment: "Genial foto amigo",
+                        picUser: "img/castro.jpg",
+                    },
+                    {
+                        comentUser: "Vanessa Medina",
+                        coment: "Nice pic, good day ;)",
+                        picUser: "img/medina.jpg",
+                    },
+                    {
+                        comentUser: "Jorge Varela",
+                        coment: "Ey, tiempo sin verte, cualquier dia salimos :)",
+                        picUser: "img/varela.jpg",
+                    },
+                    {
+                        comentUser: "Ronald Pavón",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/thunder.jpg",
+                    },
+                ]
+            },
+            {   
+                img: "img/9.webp",
+                Comentarios: [
+                    {
+                        comentUser: "Oscar Castro",
+                        coment: "Genial foto amigo",
+                        picUser: "img/castro.jpg",
+                    },
+                    {
+                        comentUser: "Vanessa Medina",
+                        coment: "Nice pic, good day ;)",
+                        picUser: "img/medina.jpg",
+                    },
+                    {
+                        comentUser: "Jorge Varela",
+                        coment: "Ey, tiempo sin verte, cualquier dia salimos :)",
+                        picUser: "img/varela.jpg",
+                    },
+                    {
+                        comentUser: "Ronald Pavón",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/thunder.jpg",
+                    },
+                ]
+            },
+            { 
+                img: "img/amigos.jpg",
+                Comentarios: [
+                    {
+                        comentUser: "Oscar Castro",
+                        coment: "Genial foto amigo",
+                        picUser: "img/castro.jpg",
+                    },
+                    {
+                        comentUser: "Vanessa Medina",
+                        coment: "Nice pic, good day ;)",
+                        picUser: "img/medina.jpg",
+                    },
+                    {
+                        comentUser: "Jorge Varela",
+                        coment: "Ey, tiempo sin verte, cualquier dia salimos :)",
+                        picUser: "img/varela.jpg",
+                    },
+                    {
+                        comentUser: "Ronald Pavón",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/thunder.jpg",
+                    },
+                ]
+            },
+            { 
+                img: "img/11.webp",
+                Comentarios: [
+                    {
+                        comentUser: "Oscar Castro",
+                        coment: "Genial foto amigo",
+                        picUser: "img/castro.jpg",
+                    },
+                    {
+                        comentUser: "Vanessa Medina",
+                        coment: "Nice pic, good day ;)",
+                        picUser: "img/medina.jpg",
+                    },
+                    {
+                        comentUser: "Jorge Varela",
+                        coment: "Ey, tiempo sin verte, cualquier dia salimos :)",
+                        picUser: "img/varela.jpg",
+                    },
+                    {
+                        comentUser: "Ronald Pavón",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/thunder.jpg",
+                    },
+                ]
+            },
+            { 
+                img: "img/portada.jpg",
+                Comentarios: [
+                    {
+                        comentUser: "Oscar Castro",
+                        coment: "Genial foto amigo",
+                        picUser: "img/castro.jpg",
+                    },
+                    {
+                        comentUser: "Vanessa Medina",
+                        coment: "Nice pic, good day ;)",
+                        picUser: "img/medina.jpg",
+                    },
+                    {
+                        comentUser: "Jorge Varela",
+                        coment: "Ey, tiempo sin verte, cualquier dia salimos :)",
+                        picUser: "img/varela.jpg",
+                    },
+                    {
+                        comentUser: "Ronald Pavón",
+                        coment: "Vivo vivo vivo",
+                        picUser: "img/thunder.jpg",
+                    },
+                ]
+            },
+            
+        ],
         amigos: [
             {
                 name: "Ricardo Antonio",
-                img: "img/amigos.jpg",
+                imgA: "img/amigos.jpg",
                 ami: "335"
             },
             {
                 name: "Jorge Varela",
-                img: "img/1.webp",
+                imgA: "img/1.webp",
                 ami: "436"
             },
             {
                 name: "Denis Sevilla",
-                img: "img/2.webp",
+                imgA: "img/2.webp",
                 ami: "987"
             },
             {
                 name: "Isaac Ramirez",
-                img: "img/portada.jpg",
+                imgA: "img/portada.jpg",
                 ami: "764"
             },    
         ]
@@ -44,10 +347,6 @@ var Usuario = [
     }
 ]
 
-let contador = 1;
-/*for (let g = 0; g < array.length; g++) {
-    
-}*/
 function genInfo() {
     for (let i = 0; i < Usuario.length; i++) {
         document.getElementById('picPortada').innerHTML = 
@@ -66,9 +365,67 @@ function genInfo() {
         document.getElementById('user_nav').innerHTML = 
         `<p style="margin: 0 px; color: white; font-size: 13px; margin-left: .5rem;">${Usuario[i].nombre + " " + Usuario[i].apellido}</p> `;
     }
-}
 
+    /*for (let k = 0; k < Comentarios.length; k++) {
+        document.getElementById('coments').innerHTML += 
+        `<div class="row" style="margin-bottom: 1rem;">
+            <table>
+                <tr style="margin-bottom: 5rem;">
+                    <th>
+                        <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="${Comentarios[k].picUser}" alt="">
+                    </th>
+                    <th>
+                        <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                            <p style="font-size: .9rem; font-weight: normal;">
+                                <a style="color: #4a6fc0; font-weight: bold;" href="">${Comentarios[k].comentUser}</a>
+                                ${Comentarios[k].coment} 
+                            </p>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>`;
+    }*/
+
+    //Quitar esto 
+
+    
+
+    /*for (let z = 0; z < Usuario.length; z++) {
+        for (let index = 0; index < apartadoFotografia.length; index++) {
+            
+            
+        }
+        
+    }*/
+
+
+
+    /*for (let h = 0; h < Comentarios.length; h++) {
+        document.getElementById('coments3').innerHTML += 
+        `<div class="row" style="margin-bottom: 1rem;">
+            <table>
+                <tr style="margin-bottom: 5rem;">
+                    <th>
+                        <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="${Comentarios[h].picUser}" alt="">
+                    </th>
+                    <th>
+                        <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                            <p style="font-size: .9rem; font-weight: normal;">
+                                <a style="color: #4a6fc0; font-weight: bold;" href="">${Comentarios[h].comentUser}</a>
+                                ${Comentarios[h].coment} 
+                            </p>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>`;
+    }*/
+
+}
 genInfo();
+
+
 
 function genBajoPerfil() {
     for (let i = 0; i < Usuario.length; i++) {
@@ -154,17 +511,18 @@ function genBajoPerfil() {
                 </div>
             </div>
         </div>
-            <div class="col-7" style="padding: 0; padding-left: 1rem;">     <!-- Col para zona de publicaciones-->
+
+        <div class="col-7" style="padding: 0; padding-left: 1rem;">     <!-- Col para zona de publicaciones-->
             <div class="card text-center">
                 <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item">
-                    <a class="nav-link active" href="#"><i class="fas fa-pencil-alt"></i> Crear publicación</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-camera"></i> Foto/vídeo</a>
-                    </li>
-                </ul>
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-pencil-alt"></i> Crear publicación</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-camera"></i> Foto/vídeo</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="card-body">
                     <div class="row">
@@ -177,12 +535,13 @@ function genBajoPerfil() {
                                     <input class="pensando" type="text" style="border: none; margin-left: 15px; width: 30rem;" placeholder="¿Que estas pensando?">
                                 </th>
                             </tr>
-                        </table>
-                        
+                        </table>    
                     </div>
+
                     <div class="row" style="margin: .1rem;">
                         <hr style="width: 100%;text-align:left;margin-left:0">
                     </div>
+
                     <div class="row">
                         <button class="pic" style="border-radius: 50px; margin-left: 1rem; background-color: #f0f0f0; border: none; padding: .3rem 20px;">
                             <i style="font-size: 20px;" class="fas fa-image"></i>
@@ -192,23 +551,203 @@ function genBajoPerfil() {
                     </div>
                 </div>
             </div>
+
+            <div class="card text-center" style="width: 100%; margin-top: 1rem;">        <!-- Publicaciones -->
+                <div class="card-body" style="padding: 0;">
+                    <div class="row" style="margin: 1rem;">
+                        <table style="margin-left: 25px;">
+                            <tr>
+                                <th id="imgP_public">
+                                    <img style="max-width: 55px; min-width: 50px; border-radius: 50%;" src="img/perfil.jpg" alt="">
+                                </th>
+                                <th id="user_public">
+                                    <a style="margin-left: 1rem; color: #4a6fc0;" href="">Darwin Rodas</a>
+                                </th>
+                                <th>
+                                    <button class="out" style="background-color: transparent; border: none; margin-left: 20rem; outline: none;">
+                                        <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                        <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                        <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                    </button>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="img_public">
+                        <img style="max-width: 40.5rem; min-width: 40.5rem;" src="img/amigos.jpg" alt="">
+                    </div> 
+                        
+                    <div class="row" style="margin: .1rem; margin-top: 1rem;">
+                        <hr style="width: 95%;">
+                    </div>
+
+                    <div class="row">
+                        <table>
+                            <tr>
+                                <th>
+                                    <button class="reac_public" style="margin-left: 2rem;">
+                                        <i class="far fa-thumbs-up"></i>
+                                        Me gusta                                          
+                                    </button>
+                                </th>
+                                <th>
+                                    <button class="reac_public">
+                                        <i class="far fa-comment"></i>
+                                        Comentar
+                                    </button>
+                                </th>
+                                <th>
+                                    <button class="reac_public">
+                                        <i class="fas fa-share"></i>
+                                        compartir
+                                    </button>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-center" style="width: 100%; margin-top: 1rem;">        <!-- Publicaciones -->
+                <div class="card-body" style="padding: 0;">
+                    <div class="row" style="margin: 1rem;">
+                        <table style="margin-left: 25px;">
+                            <tr>
+                                <th id="imgP_public">
+                                    <img style="max-width: 55px; min-width: 50px; border-radius: 50%;" src="img/perfil.jpg" alt="">
+                                </th>
+                                <th id="user_public">
+                                    <a style="margin-left: 1rem; color: #4a6fc0;" href="">Darwin Rodas</a>
+                                </th>
+                                <th>
+                                    <button class="out" style="background-color: transparent; border: none; margin-left: 20rem; outline: none;">
+                                        <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                        <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                        <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                    </button>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="img_public">
+                        <img style="max-width: 40.5rem; min-width: 40.5rem;" src="img/amigos.jpg" alt="">
+                    </div> 
+                        
+                    <div class="row" style="margin: .1rem; margin-top: 1rem;">
+                        <hr style="width: 95%;">
+                    </div>
+
+                    <div class="row">
+                        <table>
+                            <tr>
+                                <th>
+                                    <button class="reac_public" style="margin-left: 2rem;">
+                                        <i class="far fa-thumbs-up"></i>
+                                        Me gusta                                          
+                                    </button>
+                                </th>
+                                <th>
+                                    <button class="reac_public">
+                                        <i class="far fa-comment"></i>
+                                        Comentar
+                                    </button>
+                                </th>
+                                <th>
+                                    <button class="reac_public">
+                                        <i class="fas fa-share"></i>
+                                        compartir
+                                    </button>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-center" style="width: 100%; margin-top: 1rem;">        <!-- Publicaciones -->
+                <div class="card-body" style="padding: 0;">
+                    <div class="row" style="margin: 1rem;">
+                        <table style="margin-left: 25px;">
+                            <tr>
+                                <th id="imgP_public">
+                                    <img style="max-width: 55px; min-width: 50px; border-radius: 50%;" src="img/perfil.jpg" alt="">
+                                </th>
+                                <th id="user_public">
+                                    <a style="margin-left: 1rem; color: #4a6fc0;" href="">Darwin Rodas</a>
+                                </th>
+                                <th>
+                                    <button class="out" style="background-color: transparent; border: none; margin-left: 20rem; outline: none;">
+                                        <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                        <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                        <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                    </button>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="img_public">
+                        <img style="max-width: 40.5rem; min-width: 40.5rem;" src="img/amigos.jpg" alt="">
+                    </div> 
+                        
+                    <div class="row" style="margin: .1rem; margin-top: 1rem;">
+                        <hr style="width: 95%;">
+                    </div>
+
+                    <div class="row">
+                        <table>
+                            <tr>
+                                <th>
+                                    <button class="reac_public" style="margin-left: 2rem;">
+                                        <i class="far fa-thumbs-up"></i>
+                                        Me gusta                                          
+                                    </button>
+                                </th>
+                                <th>
+                                    <button class="reac_public">
+                                        <i class="far fa-comment"></i>
+                                        Comentar
+                                    </button>
+                                </th>
+                                <th>
+                                    <button class="reac_public">
+                                        <i class="fas fa-share"></i>
+                                        compartir
+                                    </button>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
         </div>`;
         
     }
 }
 genBajoPerfil();
 
+//AQUIB ASDFASF SVGDefsElement
+//SVGAnimatedTransformListASDF
+
+//SVGAnimatedTransformListASDF
+
+//ASDFASDF
+
 function genFotos() {
     for (let i = 0; i < Usuario.length; i++) {
         for (let k = 0; k <= 8; k++) {
             document.getElementById('gesFotos').innerHTML += 
-            `<div style="padding: 0;" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-1" id="genFotos">
-                <img style="margin-bottom: 3px; margin-left: 3px; min-width: 150px; max-width: 150px;; height: 7rem; object-fit: cover;" src="${Usuario[i].imagenes[k]}">
+            `<div style="padding: 0;" class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-1" id="genFotos" onclick="mostrarFotoInfo(${i}, ${k})">
+                <img style="margin-bottom: 3px; margin-left: 3px; min-width: 150px; max-width: 150px;; height: 7rem; object-fit: cover;" src="${Usuario[i].apartadoFotografia[k].img}">
             </div>`;
             
         }
     }   
 }
+
 genFotos();
 
 function genAmigos() {
@@ -220,7 +759,7 @@ function genAmigos() {
                 <table>
                     <tr>
                         <th>
-                            <img style="max-width: 150px; min-width: 150px;" src="${Usuario[i].amigos[g].img}" alt="">
+                            <img style="max-width: 150px; min-width: 150px;" src="${Usuario[i].amigos[g].imgA}" alt="">
                         </th>
                         <th>
                             <p style="margin-left: 1rem;"><a href="">${Usuario[i].amigos[g].name}</a></p>
@@ -244,10 +783,10 @@ genAmigos();
 
 function genFotoscard() {
     for (let i = 0; i < Usuario.length; i++) {
-        for (let h = 0; h < Usuario[i].imagenes.length; h++) {
+        for (let h = 0; h < Usuario[i].apartadoFotografia.length; h++) {
             document.getElementById('fotos').innerHTML += 
-            `<div style="margin-top: .5rem;" class="col-xl-3 col-md-6 col-sm-12">
-            <img style="max-width: 250px; min-width: 150px;" src="${Usuario[i].imagenes[h]}" alt="">
+            `<div style="margin-top: .5rem;" class="col-xl-3 col-md-6 col-sm-12" onclick="mostrarFotoApartado(${i}, ${h})">
+                <img style="max-width: 250px; min-width: 250px;" src="${Usuario[i].apartadoFotografia[h].img}" alt="">
             </div>`;
             
         }
@@ -255,6 +794,7 @@ function genFotoscard() {
     }
 }
 genFotoscard();
+
 
 function genClickBajoPerfil() {
     document.getElementById('cardFotos').innerHTML = '';
@@ -343,47 +883,102 @@ function genClickBajoPerfil() {
     </div>
 </div>
     <div class="col-7" style="padding: 0; padding-left: 1rem;">     <!-- Col para zona de publicaciones-->
-    <div class="card text-center">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#"><i class="fas fa-pencil-alt"></i> Crear publicación</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-camera"></i> Foto/vídeo</a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-            <div class="row">
-                <table style="margin-left: 25px;">
-                    <tr>
-                        <th>
-                            <img style="max-width: 50px; min-width: 50px; border-radius: 50%;" src="img/perfil.jpg" alt="">
-                        </th>
-                        <th>
-                            <input class="pensando" type="text" style="border: none; margin-left: 15px; width: 30rem;" placeholder="¿Que estas pensando?">
-                        </th>
-                    </tr>
-                </table>
-                <!-- <img style="background-color: white; padding: 4px;max-width: 200px; min-width: 200px; position: absolute; top: 160px; left: 50px; border-radius: 50%;" src="img/perfil.jpg" alt=""> -->
-                
-                <!-- <i style="color: white; background-color: #4a6fc0; border-radius: 50%; padding: 5px; margin: 0 1rem; font-size: 5rem;" class="fas fa-globe-americas"></i> -->
-                
+        <div class="card text-center">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="fas fa-pencil-alt"></i> Crear publicación</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-camera"></i> Foto/vídeo</a>
+                    </li>
+                </ul>
             </div>
-            <div class="row" style="margin: .1rem;">
-                <hr style="width: 100%;text-align:left;margin-left:0">
-            </div>
-            <div class="row">
-                <button class="pic" style="border-radius: 50px; margin-left: 1rem; background-color: #f0f0f0; border: none; padding: .3rem 20px;">
-                    <i style="font-size: 20px;" class="fas fa-image"></i>
-                     Foto/video
-                </button>
-                <button style="margin-right: 1rem; background-color: #4a6fc0; color: white; border-radius: 5px; outline: none; padding: 0 20px; font-weight: bold; font-size: .8rem;" class="ml-auto">Publicar</button>
+            <div class="card-body">
+                <div class="row">
+                    <table style="margin-left: 25px;">
+                        <tr>
+                            <th>
+                                <img style="max-width: 50px; min-width: 50px; border-radius: 50%;" src="img/perfil.jpg" alt="">
+                            </th>
+                            <th>
+                                <input class="pensando" type="text" style="border: none; margin-left: 15px; width: 30rem;" placeholder="¿Que estas pensando?">
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row" style="margin: .1rem;">
+                    <hr style="width: 100%;text-align:left;margin-left:0">
+                </div>
+                <div class="row">
+                    <button class="pic" style="border-radius: 50px; margin-left: 1rem; background-color: #f0f0f0; border: none; padding: .3rem 20px;">
+                        <i style="font-size: 20px;" class="fas fa-image"></i>
+                        Foto/video
+                    </button>
+                    <button style="margin-right: 1rem; background-color: #4a6fc0; color: white; border-radius: 5px; outline: none; padding: 0 20px; font-weight: bold; font-size: .8rem;" class="ml-auto">Publicar</button>
+                </div>
             </div>
         </div>
-      </div>
-</div>`;
+
+        <div class="card text-center" style="width: 100%; margin-top: 1rem;">        <!-- Publicaciones -->
+            <div class="card-body" style="padding: 0;">
+                <div class="row" style="margin: 1rem;">
+                    <table style="margin-left: 25px;">
+                        <tr>
+                            <th id="imgP_public">
+                                <img style="max-width: 55px; min-width: 50px; border-radius: 50%;" src="img/perfil.jpg" alt="">
+                            </th>
+                            <th id="user_public">
+                                <a style="margin-left: 1rem; color: #4a6fc0;" href="">Darwin Rodas</a>
+                            </th>
+                            <th>
+                                <button class="out" style="background-color: transparent; border: none; margin-left: 20rem; outline: none;">
+                                    <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                    <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                    <i style="font-size: 10px; color: grey;" class="fas fa-circle"></i>
+                                </button>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="img_public">
+                    <img style="max-width: 40.5rem; min-width: 40.5rem;" src="img/amigos.jpg" alt="">
+                </div> 
+                    
+                <div class="row" style="margin: .1rem; margin-top: 1rem;">
+                    <hr style="width: 95%;">
+                </div>
+
+                <div class="row">
+                    <table>
+                        <tr>
+                            <th>
+                                <button class="reac_public" style="margin-left: 2rem;">
+                                    <i class="far fa-thumbs-up"></i>
+                                    Me gusta                                          
+                                </button>
+                            </th>
+                            <th>
+                                <button class="reac_public">
+                                    <i class="far fa-comment"></i>
+                                    Comentar
+                                </button>
+                            </th>
+                            <th>
+                                <button class="reac_public">
+                                    <i class="fas fa-share"></i>
+                                    compartir
+                                </button>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>`;
 
     genFotos();
 }
@@ -776,4 +1371,60 @@ function mostrarPicPerfil() {
 
 function mostrarPicPortada() {
     $('#modalPortada').modal('show');
+}
+
+function mostrarFotoApartado(a, b) {
+    $('#modalApartadoFotos').modal('show');
+    document.getElementById('apartadoFotos').innerHTML =
+    `<img src="${Usuario[a].apartadoFotografia[b].img}" alt="" style="max-width: 43rem; min-width: 40rem;">`;
+
+    document.getElementById('coments3').innerHTML = " "; 
+    for (let e = 0; e < Usuario[a].apartadoFotografia[b].Comentarios.length; e++) {
+        document.getElementById('coments3').innerHTML += 
+            `<div class="row" style="margin-bottom: 1rem;">
+                <table>
+                    <tr style="margin-bottom: 5rem;">
+                        <th>
+                            <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="${Usuario[a].apartadoFotografia[b].Comentarios[e].picUser}" alt="">
+                        </th>
+                        <th>
+                            <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                <p style="font-size: .9rem; font-weight: normal;">
+                                    <a style="color: #4a6fc0; font-weight: bold;" href="">${Usuario[a].apartadoFotografia[b].Comentarios[e].comentUser}</a>
+                                    ${Usuario[a].apartadoFotografia[b].Comentarios[e].coment} 
+                                </p>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>`;
+    }
+}
+
+function mostrarFotoInfo(a, b) {
+    $('#modalFotosInfo').modal('show');
+    document.getElementById('fotosInfo').innerHTML =
+    `<img src="${Usuario[a].apartadoFotografia[b].img}" alt="" style="max-width: 43rem; min-width: 40rem;">`;
+
+    document.getElementById('coments2').innerHTML = " "; 
+    for (let e = 0; e < Usuario[a].apartadoFotografia[b].Comentarios.length; e++) {
+        document.getElementById('coments2').innerHTML += 
+            `<div class="row" style="margin-bottom: 1rem;">
+                <table>
+                    <tr style="margin-bottom: 5rem;">
+                        <th>
+                            <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="${Usuario[a].apartadoFotografia[b].Comentarios[e].picUser}" alt="">
+                        </th>
+                        <th>
+                            <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                <p style="font-size: .9rem; font-weight: normal;">
+                                    <a style="color: #4a6fc0; font-weight: bold;" href="">${Usuario[a].apartadoFotografia[b].Comentarios[e].comentUser}</a>
+                                    ${Usuario[a].apartadoFotografia[b].Comentarios[e].coment} 
+                                </p>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>`;
+    }
 }

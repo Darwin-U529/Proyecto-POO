@@ -93,6 +93,22 @@ p {
     background-color: #00000018;
 }
 
+.reac_public {
+    padding: .3rem 4.1rem;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}
+
+.reac_public:focus {
+    outline: none!important;
+}
+
+.reac_public:hover {
+    background-color: #00000018;
+}
+
 .modal-body{
     height: 40rem;
     width: 100%;
