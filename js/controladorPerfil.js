@@ -1309,7 +1309,7 @@ function mostrarPicPerfil() {
     document.getElementById('picComentPP').innerHTML =
     `<img style="max-width: 40px; min-width: 35px; border-radius: 50%; margin-left: 1rem;" src="${Usuario[0].img_perfil}" alt="">`;
     
-    document.getElementById('picPerfilPP').innerHTML =
+    document.getElementById('picPerfilnamePP').innerHTML =
     `<img style="max-width: 55px; min-width: 50px; border-radius: 50%; margin-left: 3rem;" src="${Usuario[0].img_perfil}" alt="">`;
     
     document.getElementById('namePerfilPP').innerHTML =
@@ -1345,7 +1345,43 @@ function mostrarPicPerfil() {
 function mostrarPicPortada() {
     $('#modalPortada').modal('show');
 
+    document.getElementById('picPortadaPO').innerHTML =
+    `<img src="${Usuario[0].img_portada}" alt="" style="max-width: 43rem; min-width: 40rem;">`;
     
+    document.getElementById('picComentPO').innerHTML =
+    `<img style="max-width: 40px; min-width: 35px; border-radius: 50%; margin-left: 1rem;" src="${Usuario[0].img_perfil}" alt="">`;
+    
+    document.getElementById('picPerfilnamePO').innerHTML =
+    `<img style="max-width: 55px; min-width: 50px; border-radius: 50%; margin-left: 3rem;" src="${Usuario[0].img_perfil}" alt="">`;
+    
+    document.getElementById('namePerfilPO').innerHTML =
+    `<a style="margin-left: 1rem; color: #4a6fc0;" href="">${Usuario[0].nombre} ${Usuario[0].apellido} </a>`;
+
+    document.getElementById('coments4').innerHTML = " "; 
+    for (let x = 0; x < Usuario[0].apartadoFotografia[3].Comentarios.length; x++) {
+        document.getElementById('coments4').innerHTML += 
+            `<div class="row" style="margin-bottom: 1rem;">
+                <table>
+                    <tr style="margin-bottom: 5rem;">
+                        <th>
+                            <img style="max-width: 45px; min-width: 40px; border-radius: 50%; margin-left: 3rem;" src="${Usuario[0].apartadoFotografia[3].Comentarios[x].picUser}" alt="">
+                        </th>
+                        <th>
+                            <div style="background-color: #F2F3F5; border-radius: 10px; padding: 1rem .5rem; margin-left: .5rem; height: auto; width: 21rem;">
+                                <p style="font-size: .9rem; font-weight: normal;">
+                                    <a style="color: #4a6fc0; font-weight: bold;" href="">${Usuario[0].apartadoFotografia[3].Comentarios[x].comentUser}</a>
+                                    ${Usuario[0].apartadoFotografia[3].Comentarios[x].coment} 
+                                </p>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>`;
+
+        document.getElementById('comentsPO').innerHTML =
+            `${x+1} comentarios`;
+        
+    }
 }
 
 function mostrarFotoApartado(a, b) {
