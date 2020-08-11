@@ -1386,6 +1386,7 @@ function mostrarPicPortada() {
 
 function mostrarFotoApartado(a, b) {
     $('#modalApartadoFotos').modal('show');
+
     document.getElementById('apartadoFoto').innerHTML =
     `<img src="${Usuario[a].apartadoFotografia[b].img}" alt="" style="max-width: 43rem; min-width: 40rem;">`;
 
@@ -1397,8 +1398,6 @@ function mostrarFotoApartado(a, b) {
     
     document.getElementById('namePerfilAF').innerHTML =
     `<a style="margin-left: 1rem; color: #4a6fc0;" href="">${Usuario[a].nombre} ${Usuario[a].apellido} </a>`;
-    
-    
 
     document.getElementById('coments3').innerHTML = " "; 
     for (let e = 0; e < Usuario[a].apartadoFotografia[b].Comentarios.length; e++) {
