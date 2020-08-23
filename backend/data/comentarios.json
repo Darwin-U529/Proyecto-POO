@@ -1,0 +1,30 @@
+[
+    {
+        "codigoComentario": 0,
+        "codigoPublic": 0,
+        "comentUser": "Oscar Castro",
+        "coment": "Genial foto amigo",
+        "picUser": "img/castro.jpg"
+    },
+    {
+        "codigoComentario": 0,
+        "codigoPublic": 0,
+        "comentUser": "Vanessa Medina",
+        "coment": "Nice pic, good day ;)",
+        "picUser": "img/medina.jpg"
+    },
+    {
+        "codigoComentario": 0,
+        "codigoPublic": 0,
+        "comentUser": "Jorge Varela",
+        "coment": "Ey, tiempo sin verte, cualquier dia salimos :)",
+        "picUser": "img/varela.jpg"
+    },
+    {
+        "codigoComentario": 0,
+        "codigoPublic": 0,
+        "comentUser": "Ronald Pavón",
+        "coment": "Vivo vivo vivo",
+        "picUser": "img/thunder.jpg"
+    }
+]    

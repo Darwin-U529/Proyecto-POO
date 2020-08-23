@@ -1,0 +1,20 @@
+[
+    {
+        "idUsuario": 0,
+        "educacion": "Ingenieria en Sistemas",
+        "li_estudio": "UNAH",
+        "estado_civil": "Soltero",
+        "ubicacion": "Tegucigalpa, Honduras",
+        "lu_naciento": "Comayaguela, Francisco Morazan, Honduras",
+        "ingreso": "noviembre de 2010", 
+        "img_perfil": "img/perfil.jpg",
+        "img_portada": "img/portada.jpg",
+        "fecha_nacimiento": "25 de agosto 1997",
+        "telefono": "8524-2567",
+        "correo": "programacion@mail.com",
+        "trabajo": "Facebook",
+        "sexo": "Masculino",
+        "intereses": "Mujeres",
+        "idiomas": "Español"
+    }
+]

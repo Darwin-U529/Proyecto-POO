@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/05161e6086.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="mr-auto">
+            <table style="margin-left: 10rem;">
+                <tr>
+                    <th>                    <!-- Icono y barra de Search-->
+                        <i class="fab fa-facebook-square" style="font-size: 40px; color: white; padding: 5px;"></i>
+                    </th>
+                    <th>
+                        <div class="input-group" id="place">
+                            
+                            <div class="input-group-append">
+                            <button class="btn btn-outline-light" type="button" id="button-addon2" style="background-color: #f0f0f0; border: none;">
+                                <i style="color: #0000008e;" class="fas fa-search"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>        <!--Meter aqui la parte de justo abajo-->
+
+                    </th>
+                </tr>
+            </table>
+        </div>
+                 
+        <button class="navbut">
+            <a href="perfil.html" style="">
+                <table>
+                    <tr>
+                        <th id="pic_nav"> <!-- Foto perfil Nav -->
+                            
+                        </th>
+                        <td id="user_nav">    <!-- Usuario Nav-->
+                            
+                        </td>
+                    </tr>
+                </table>  
+            </a>
+        </button>
+        <div class="vertical"></div>
+        <button class="navbut">
+            <a href="inicio.html">
+                <p style="margin: 0 10px; color: white; font-size: 13px; padding: .5rem 0; ">Inicio</p>
+            </a>
+        </button>
+        <div class="vertical"></div>
+        <button class="navbut">
+            <a href="">
+                <p style="margin: 0 10px; color: white; font-size: 13px; padding: .5rem 0; ">Crear</p>
+            </a>
+        </button>
+        <div class="vertical"></div>
+        <i class="fas fa-user-friends icono"></i>
+        <i class="fab fa-facebook-messenger icono"></i>
+        <i class="fas fa-bell icono"></i>
+        <div class="vertical"></div>
+        <i class="fas fa-question-circle icono"></i>
+        <i style="margin-right: 15rem;" class="fas fa-caret-down icono"></i>
+
+    </nav>
+
+      <div class="container">
+            <div class="row">     <!--row para seccion de portada-->
+                <div class="card mb-3" style="width: 100%;">
+                
+                    <div id="picPortada" onclick="mostrarPicPortada()">    
+                        
+                    </div>    
+
+                    <div class="card-body" style="height: 3.5rem;">
+                        <table>
+                            <tr>
+                                <th style="width: 25rem;">
+                                    
+                                    <div id="picPerfil" onclick="mostrarPicPerfil(0)">
+                                        
+                                    </div>
+                                </th>
+                                <th>
+                                    
+                                    <input onclick="genClickBajoPerfil()" class="bari" type="button" value="Biografia" style="color: #4a6fc0; padding: 0 1.5rem;;border-color: #0000001e; background-color: white; position: absolute; top: 20rem; height: 57px; border: .5px normal;">
+                                </th>
+                                <th>
+                                    <input onclick="genCardInfo(0)" class="bari" type="button" value="Informacion" style="color: #4a6fc0; padding: 0 2rem;;border-color: #0000001e; background-color: white; position: absolute; top: 20rem; left: 32.7rem; height: 57px;">
+                                </th>
+                                <th>
+                                    <input onclick="genCardFriends()" class="bari" type="button" value="Amigos" style="color: #4a6fc0; padding: 0 1.5rem;;border-color: #0000001e; background-color: white; position: absolute; top: 20rem; left: 41.1rem; height: 57px;">
+                                </th>
+                                <th>
+                                    <input onclick="genCardFotos()" class="bari" type="button" value="Fotos" style="color: #4a6fc0; padding: 0 1.5rem;;border-color: #0000001e; background-color: white; position: absolute; top: 20rem; left: 46.8em; height: 57px;">
+                                </th>
+                                <th>
+                                    <select class="bari" style="color: #4a6fc0; padding: 0 1.5rem;;border-color: #0000001e; background-color: white; position: absolute; top: 20rem; left: 52rem; height: 57px;">                                                                                             
+                                        <option value="1">Mas</option>                                                                                                                                                                                                       
+                                        <option value="2"></option>                                                                           
+                                    </select>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="row" id="cardFotos">
+                
+            </div>
+
+            <div class="row" id="cardInfo">
+                
+            </div>
+
+            <div class="row" id="cardFriends">          <!-- -->
+                
+            </div>
+
+            <div class="row mt-4" id="bajoPerfil">      <!-- row para secciones abajo de la portada-->
+                
+            </div>
+
+            
+
+      </div>
+      <br><br>
+
+    <div class="modal fade" id="modalPerfil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-lg">
+            <div class="modal-content">    
+                <div class="row " style="margin-left: -18rem; margin-top: -1rem;">
+                        <table style="background-color: white;">
+                            <tr>
+                                <th style="background-color: black;"> 
+                                    <div id="picPerfilPP">
+                                        
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <div class="modal-body" style=" padding: 0; padding-right: 15px;">
+                                            
+                                            <div class="row" style="margin-right: 30rem;">
+                                            </div>
+
+                                            <div class="row" style="margin-top: 1.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th id="picPerfilnamePP">
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            <div id="namePerfilPP">
+                                                                
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <button class="out" style="background-color: transparent; border: none; margin-right: 1rem; margin-left: 10rem; outline: none;">
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <br><br><br>
+
+                                            <div class="row" style="margin-bottom: -.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <div style="margin-left: 3rem;">
+                                                                <i style="border-radius: 50%; background-color: #4a6fc0; color: white; padding: 5px;" class="far fa-thumbs-up"></i>
+                                                                46
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <div style="margin-left: 15rem; font-weight: normal; font-size: .9rem;" id="comentsPP">
+                                                                
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin: .1rem; margin-bottom: -0.5rem; margin-top: 0;">
+                                                <hr style="width: 95%;">
+                                            </div>
+
+                                            <div class="row">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <button class="reac" style="margin-left: 2.5rem;">
+                                                                <i class="far fa-thumbs-up"></i>
+                                                                Me gusta                                          
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="far fa-comment"></i>
+                                                                Comentar
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="fas fa-share"></i>
+                                                                compartir
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin-top: -1.5rem;">
+                                                <hr style="width: 100%;">
+                                            </div>
+
+                                            <section id="coments">
+
+                                            </secction>   
+                                        </div>
+
+                                        <section style="background-color: #f3f3f3; padding: .5rem;">
+                                            <table>
+                                                <tr>
+                                                    <th id="picComentPP">
+                                                        
+                                                    </th>
+    
+                                                    <td>
+                                                        <input style="margin-left: 1rem; border-radius: 5px; background-color: transparent; border: none; outline: none;" placeholder="Escribe un comentario" type="text">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </section>
+
+                                    </div>
+                                </th>   
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+     </div>
+
+     <div class="modal fade" id="modalPortada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-lg">
+            <div class="modal-content">    
+                <div class="row " style="margin-left: -18rem; margin-top: -1rem;">
+                        <table style="background-color: white;">
+                            <tr>
+                                <th style="background-color: black;"> 
+                                    <div id="picPortadaPO">
+                                        
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <div class="modal-body" style=" padding: 0; padding-right: 15px;">
+                                            
+                                            <div class="row" style="margin-right: 30rem;">
+                                            </div>
+
+                                            <div class="row" style="margin-top: 1.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th id="picPerfilnamePO">
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            <div id="namePerfilPO">
+                                                                
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <button class="out" style="background-color: transparent; border: none; margin-right: 1rem; margin-left: 10rem; outline: none;">
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <br><br><br>
+
+                                            <div class="row" style="margin-bottom: -.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <div style="margin-left: 3rem;">
+                                                                <i style="border-radius: 50%; background-color: #4a6fc0; color: white; padding: 5px;" class="far fa-thumbs-up"></i>
+                                                                46
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <div style="margin-left: 15rem; font-weight: normal; font-size: .9rem;" id="comentsPO">
+                                                                
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin: .1rem; margin-bottom: -0.5rem; margin-top: 0;">
+                                                <hr style="width: 95%;">
+                                            </div>
+
+                                            <div class="row">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <button class="reac" style="margin-left: 2.5rem;">
+                                                                <i class="far fa-thumbs-up"></i>
+                                                                Me gusta                                          
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="far fa-comment"></i>
+                                                                Comentar
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="fas fa-share"></i>
+                                                                compartir
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin-top: -1.5rem;">
+                                                <hr style="width: 100%;">
+                                            </div>
+
+                                            <section id="coments4">
+
+                                            </secction>   
+                                        </div>
+
+                                        <section style="background-color: #f3f3f3; padding: .5rem;">
+                                            <table>
+                                                <tr>
+                                                    <th id="picComentPO">
+                                                        
+                                                    </th>
+    
+                                                    <td>
+                                                        <input style="margin-left: 1rem; border-radius: 5px; background-color: transparent; border: none; outline: none;" placeholder="Escribe un comentario" type="text">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </section>
+
+                                    </div>
+                                </th>   
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+     </div>
+  
+    <div class="modal fade" id="modalFotosInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-lg">
+            <div class="modal-content">    
+                <div class="row " style="margin-left: -18rem; margin-top: -1rem;">
+                        <table style="background-color: white;">
+                            <tr>
+                                <th style="background-color: black;"> 
+                                    <div id="fotosInfo">
+                                        
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <div class="modal-body" style=" padding: 0; padding-right: 15px;">
+                                            
+                                            <div class="row" style="margin-right: 30rem;">
+                                            </div>
+
+                                            <div class="row" style="margin-top: 1.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th id="picPerfilFI">
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            <div id="namePerfilFI">
+                                                                
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <button class="out" style="background-color: transparent; border: none; margin-right: 1rem; margin-left: 10rem; outline: none;">
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <br><br><br>
+
+                                            <div class="row" style="margin-bottom: -.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <div style="margin-left: 3rem;">
+                                                                <i style="border-radius: 50%; background-color: #4a6fc0; color: white; padding: 5px;" class="far fa-thumbs-up"></i>
+                                                                46
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <div style="margin-left: 15rem; font-weight: normal; font-size: .9rem;" id="comentsFI">
+                                                                
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin: .1rem; margin-bottom: -0.5rem; margin-top: 0;">
+                                                <hr style="width: 95%;">
+                                            </div>
+
+                                            <div class="row">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <button class="reac" style="margin-left: 2.5rem;">
+                                                                <i class="far fa-thumbs-up"></i>
+                                                                Me gusta                                          
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="far fa-comment"></i>
+                                                                Comentar
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="fas fa-share"></i>
+                                                                compartir
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin-top: -1.5rem;">
+                                                <hr style="width: 100%;">
+                                            </div>
+
+                                            <section id="coments2">
+
+                                            </secction>   
+                                        </div>
+
+                                        <section style="background-color: #f3f3f3; padding: .5rem;">
+                                            <table>
+                                                <tr>
+                                                    <th id="picComentFI">
+                                                        
+                                                    </th>
+    
+                                                    <td>
+                                                        <input style="margin-left: 1rem; border-radius: 5px; background-color: transparent; border: none; outline: none;" placeholder="Escribe un comentario" type="text">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </section>
+
+                                    </div>
+                                </th>   
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="modal fade" id="modalApartadoFotos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-lg">
+            <div class="modal-content">    
+                <div class="row " style="margin-left: -18rem; margin-top: -1rem;">
+                        <table style="background-color: white;">
+                            <tr>
+                                <th style="background-color: black;"> 
+                                    <div id="apartadoFoto">
+                                        
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <div class="modal-body" style=" padding: 0; padding-right: 15px;">
+                                            
+                                            <div class="row" style="margin-right: 30rem;">
+                                            </div>
+
+                                            <div class="row" style="margin-top: 1.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th id="picPerfilAF">
+                                                            
+                                                        </th>
+                                                        <th>
+                                                            <div id="namePerfilAF">
+                                                                
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <button class="out" style="background-color: transparent; border: none; margin-right: 1rem; margin-left: 10rem;">
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                                <i style="font-size: 5px; color: grey;" class="fas fa-circle"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <br><br><br>
+
+                                            <div class="row" style="margin-bottom: -.5rem;">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <div style="margin-left: 3rem;">
+                                                                <i style="border-radius: 50%; background-color: #4a6fc0; color: white; padding: 5px;" class="far fa-thumbs-up"></i>
+                                                                46
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            <div style="margin-left: 15rem; font-weight: normal; font-size: .9rem;" id="comentsAF">
+                                                                
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin: .1rem; margin-bottom: -0.5rem; margin-top: 0;">
+                                                <hr style="width: 95%;">
+                                            </div>
+
+                                            <div class="row">
+                                                <table>
+                                                    <tr>
+                                                        <th>
+                                                            <button class="reac" style="margin-left: 2.5rem;">
+                                                                <i class="far fa-thumbs-up"></i>
+                                                                Me gusta                                          
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="far fa-comment"></i>
+                                                                Comentar
+                                                            </button>
+                                                        </th>
+                                                        <th>
+                                                            <button class="reac">
+                                                                <i class="fas fa-share"></i>
+                                                                compartir
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="row" style="margin-top: -1.5rem;">
+                                                <hr style="width: 100%;">
+                                            </div>
+
+                                            <section id="coments3">
+
+                                            </secction>   
+                                        </div>
+
+                                        <section style="background-color: #f3f3f3; padding: .5rem;">
+                                            <table>
+                                                <tr>
+                                                    <th id="picComentAF">
+                                                        
+                                                    </th>
+                                                    
+                                                    <td>
+                                                        <input style="margin-left: 1rem; border-radius: 5px; background-color: transparent; border: none; outline: none;" placeholder="Escribe un comentario" type="text">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </section>
+
+                                    </div>
+                                </th>   
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/controladorPerfil.js"></script>
+</body>
+</html>

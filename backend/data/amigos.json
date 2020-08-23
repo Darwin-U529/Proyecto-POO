@@ -1,0 +1,26 @@
+[
+    {
+        "idUsuario": 0,
+        "name": "Ricardo Antonio",
+        "imgA": "img/amigos.jpg",
+        "ami": "335"
+    },
+    {
+        "idUsuario": 0,
+        "name": "Jorge Varela",
+        "imgA": "img/1.webp",
+        "ami": "436"
+    },
+    {
+        "idUsuario": 0,
+        "name": "Denis Sevilla",
+        "imgA": "img/2.webp",
+        "ami": "987"
+    },
+    {
+        "idUsuario": 0,
+        "name": "Isaac Ramirez",
+        "imgA": "img/portada.jpg",
+        "ami": "764"
+    }    
+]

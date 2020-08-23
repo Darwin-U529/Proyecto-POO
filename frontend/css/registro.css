@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #E4E7F1;
+}
+
+.bg-light {
+    background-color: #3B5998!important;
+}
+
+.logo {
+    width: 50%;
+}
+
+.instrucciones {
+    color: white;
+    font-size: .7rem;
+    margin-bottom: 5px;
+}
+
+.datos {
+    margin-right: 15px;
+}
+
+.dato {
+    width: 150px;
+}
+
+.entra:hover {
+    background-color: #3B5998;
+}
+
+.entrar {
+    background-color: #3f61aa;
+    border-color: rgba(0, 0, 0, 0.274);
+    border-radius: 0;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.entrar:hover {
+    background-color: #3d558a;
+}
+
+.entrar:focus {
+    background-color: #3d558a;
+    outline: none;
+}
+
+.entrar:active {                        
+    background-color: #3f61aa!important;        
+    border-color: #3f61aa!important;
+    border: none;
+}
+
+.registrarse {
+    font-size: 19px;
+    border-radius: 0;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.navbar {
+    padding-bottom: 5px;
+    margin: 0px!important;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 19px;
+}
+
+h4 {
+    color: #90949c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-control  {
+    margin: 7px 0;
+}
+
+.input-error {
+    border: 1px solid #ff0000;
+}
+
+.input-success {
+    border: 1px solid #00ff00;
+}
+
